@@ -58,16 +58,26 @@ try {
 
 ## Script Approach
 **Initializing AMSI and Retrieving Pointers**: 
+
+
 The script starts by setting up AMSI and getting pointers, which are like signposts pointing to important parts of AMSI.
 
 **Finding Scan Functions**: 
+
+
 It then looks through these pointers to find where AMSI does its scanning work, kind of like finding where a detective does their investigation.
 
 **Patching Scan Functions with RET 0**: 
+
+
 When it finds these scanning spots, the script changes them so that when they're called, they immediately stop and say "everything's okay." This makes the scans skip right over any potentially harmful stuff.
 
 **Changing Memory Access**: 
+
+
 Before making these changes, the script adjusts the way the computer sees these scanning spots so it can make changes to them, kind of like getting permission to edit a document.
 
 **Covering All Bases**: 
+
+
 The script repeats these steps for every way AMSI does its scanning, ensuring that no matter how AMSI checks for bad stuff, the script can sneak past it.
