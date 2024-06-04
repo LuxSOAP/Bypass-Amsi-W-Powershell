@@ -62,7 +62,7 @@ The script adopts a methodical approach to achieve its goal:
 
 1. **Initialization**: Commencing with AMSI initialization, the script retrieves pointers to AMSI providers.
 2. **Provider Iteration**: It iterates through each AMSI provider, pinpointing their respective scan functions.
-3. **Function Patching**: Upon locating the scan function, the script patches it with a `RET 0` instruction, thereby bypassing AMSI detection.
+3. **Function Patching**: Upon locating the scan function, the script patches it with a `RET 0` instruction, it terminates the scan function immediately upon being called (It's like saying "end the function and return successfully")
 4. **Memory Protection**: Before applying patches, the script adjusts the memory protection of the scan function to permit writing.
 5. **Iterative Patching**: The script repeats this process for all available AMSI providers.
 
