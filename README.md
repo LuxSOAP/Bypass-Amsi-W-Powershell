@@ -81,3 +81,9 @@ Before making these changes, the script adjusts the way the computer sees these 
 
 
 The script repeats these steps for every way AMSI does its scanning, ensuring that no matter how AMSI checks for bad stuff, the script can sneak past it.
+
+
+
+## Credits
+The original script credited to @maorkor ,and was introduced at BlackHat Asia 2022
+ [@maorkor](https://x.com/maorkor)
